@@ -1,0 +1,424 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: black;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+body{
+  padding: 0 0px;
+  position: relative;
+}
+
+header{
+  width: 100%;
+  height: 10vh;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  display: flex;
+}
+
+.logoBox{
+  width: 30%;
+  height: 100%;
+  border: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logoBox img{
+  width: 90%;
+  height: 80%;
+}
+
+.menuBox{
+  width: 70%;
+  height: 100%;
+  border: inherit;
+}
+
+.menuBox nav{
+  width: 100%;
+  height: 100%;
+}
+
+.menuBox nav ul{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+}
+
+.menuItem{
+  width: 100px;
+  height: 100%;
+  font-size: 20px;
+  cursor: pointer;
+  text-align: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.menuItem::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ff0000bd;
+  transition: all 0.6s;
+  z-index: -1;
+  transform: translateY(90%);
+}
+
+.menuItem:hover::before {
+  transform: translateY(0);
+}
+
+.menuItem:hover{
+  color: #fff;
+}
+
+main{
+  width: 100%;
+  height: 90vh;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  display: flex;
+}
+.filtersBox{
+  width: 20%;
+  height: 100%;
+  box-shadow: inherit;
+}
+
+.globContainer{
+  width: 80%;
+  height: 100%;
+  box-shadow: inherit;
+  overflow: auto;
+}
+
+.globContainer::-webkit-scrollbar {
+  width: 15px;
+}
+ 
+.globContainer::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 25px;
+}
+
+.globContainer::-webkit-scrollbar-track {
+  background: #ddd;
+}
+
+.globContainer::-webkit-scrollbar-button {
+  background: black;
+  height: 15px;
+  border-radius: 50%;
+}
+
+.productContent{
+  width: 100%;
+  height: auto;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.product{
+  width: 570px;
+  height: 350px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  border-radius: 15px;
+}
+
+.productTop{
+  width: 100%;
+  height: 70%;
+  border-bottom: inherit;
+  display: flex;
+}
+
+.productImg{
+  width: 60%;
+  height: 100%;
+  border: inherit;
+}
+
+.productInfoMini{
+  width: 40%;
+  height: 100%;
+  border: inherit;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.productInfoMini h1{
+  font-size: 25px;
+  height: 120px;
+}
+
+.productBottom{
+  width: 100%;
+  height: 30%;
+  /* border: inherit; */
+  display: flex;
+}
+
+.productInfoLarge{
+  width: 100%;
+  height: 100%;
+  border: inherit;
+  padding: 15px;
+  overflow: auto;
+}
+
+.productInfoLarge::-webkit-scrollbar {
+  width: 5px;
+
+}
+ 
+.productInfoLarge::-webkit-scrollbar-thumb {
+  background: black; 
+  border-radius: 25px;
+}
+
+.productImg img{
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+}
+
+.filtersContent{
+  width: 100%;
+  height: 85%;
+  border: inherit;
+}
+
+.addContent{
+  width: 100%;
+  height: 15%;
+  border: inherit;
+}
+
+.addContainer{
+  width: 100%;
+  height: 100%;
+  border: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.addContainer img{
+  width: 80px;
+  height: 80px;
+}
+
+.iconsBox{
+  width: 100%;
+  height: 32px;
+  /* border: 1px solid red; */
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 15px;
+}
+
+.LikeIconButton{
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+  
+.CartIconButton{
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
+.imgItemsBox{
+  width: auto;
+  height: auto;
+  position: relative;
+}
+
+.imgItemsBox span{
+  position: absolute;
+  right:-10px;
+  top: -10px;
+  font-size: 30px;
+}
+
+.Empty{
+  font-size: 150px;
+  font-weight: bolder;
+}
+
+.fullModal{
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.452);
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ModalContent{
+  width: 800px;
+  height: auto;
+  background-color: #fff;
+  padding: 20px;
+}
+
+.cancleBox{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.cancleButton{
+  width: 50px;
+  height: 50px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.tittleBox{
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 25px;
+}
+
+.typesBox{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.typeItem{
+  width: 120px;
+  height: 50px;
+  background-color: orange;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+
+}
+
+.inputsBox{
+  width: 100%;
+  height: auto;
+  padding: 10px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px;
+}
+
+.inputsBox input{
+  width: 330px;
+  height: 50px;
+  border: none;
+  border-bottom: 1px solid orange;
+  outline: none;
+  padding-left: 10px;
+}
+
+.inputsBox textarea{
+  width: 330px;
+  height: 50px;
+  border: none;
+  border-bottom: 1px solid orange;
+  outline: none;
+  padding-left: 10px;
+  resize: none;
+  padding-top: 20px;
+}
+
+.buttonsBox{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+.buttonsBox button{
+  width: 150px;
+  height: 50px;
+  background-color: orange;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}
+
+.roomsBox{
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.roomsItem{
+  width: 100%;
+  height: 50px;
+  border: none;
+  background-color: transparent;
+  box-shadow: inherit;
+  margin-top: 10px;
+  padding-left: 10px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.roomsItem::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ff0000bd;
+  transition: all 0.6s;
+  z-index: -1;
+  transform: translateY(90%);
+}
+
+.roomsItem:hover::before {
+  transform: translateY(0);
+}
+
+.roomsItem:hover{
+  color: #fff;
+}
